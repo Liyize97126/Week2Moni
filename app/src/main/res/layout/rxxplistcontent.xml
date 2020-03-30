@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/masterPic"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/zhanpict"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/commodityName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="商品信息"
+        android:textSize="20sp"
+        android:layout_below="@+id/masterPic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#666666"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textSize="22sp"
+        android:layout_below="@+id/commodityName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#FF0000"/>
+
+</RelativeLayout>

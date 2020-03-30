@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="百姓生活商城"
+        android:textSize="33sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.stx.xhb.androidx.XBanner
+                android:id="@+id/xbannr"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:id="@+id/rxxptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlebackground"
+                android:text="示例文本"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:padding="18dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rxxp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/mlsstitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlebackground"
+                android:text="示例文本"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:padding="18dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mlss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/pzshtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlebackground"
+                android:text="示例文本"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:gravity="center"
+                android:padding="18dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pzsh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
